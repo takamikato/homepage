@@ -1,0 +1,37 @@
+{
+  "attrsSorter.order": ["id", "name", "class"],
+  "csscomb.preset": "./csscomb.json",
+  "csscomb.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "explorer.compactFolders": false,
+  "eslint.validate": ["javascript", "typescript"],
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "liveSassCompile.settings.compileOnWatch": false,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css",
+      "savePathSegmentKeys": null,
+      "savePathReplaceSegmentsWith": null
+    }
+  ],
+  "stylelint.validate": ["scss"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 20
+}

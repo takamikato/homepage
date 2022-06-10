@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["Kaku"],
+  "flagWords": ["hte"],
+  "ignorePaths": [
+    ".git",
+    ".gitignore",
+    ".vscode",
+    ".editorconfig",
+    ".prettierrc",
+    "cspell.json",
+    "csscomb.json",
+    "./node_modules",
+    "README.md",
+    "images"
+  ]
+}

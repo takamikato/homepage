@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jquery": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "import", "'unused-imports'"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off", //unused-importsを使うため削除
+    "unused-imports/no-unused-imports": "error", //不要なimportの削除
+    "sort-imports": 0,
+    "import/order": [2, { "alphabetize": { "order": "asc" } }]
+  }
+}
