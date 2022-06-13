@@ -61,26 +61,24 @@
 
 ## Visial Studio Code 拡張機能インストール
 
-- Visial Studio Code を起動
-
-  - 下記の拡張機能をインストールする
-    | 拡張機能名 | 説明 |
-    | :---------- | :--------------------------------------------------------------------------------- |
-    | Japanese Language Pack For Visual Studio Code | VSCode を日本語化してくれる拡張機能 |
-    | Material Icon Theme | ファイルツリーのアイコンをマテリアルアイコンに変更することができる拡張機能 |
-    | Live Server | Web サイトを PC 上で確認することができるローカルサーバーを簡単に立ち上げることができるできる拡張機能 |
-    | Live Sass Compiler | VSCode で記述した Sass ファイルを CSS にコンパイルしてくれる拡張機能(Last Update Date が新しいもの) |
-    | JS & CSS Minifier (Minify) | javascript と css を圧縮・軽量化(Minify)する拡張機能 |
-    | Highlight Matching Tag | 開始タグと終了タグのペアを分かりやすく表示してくれる拡張機能 |
-    | indent-rainbow | インデントの階層ごとに色を付けてくれる拡張機能 |
-    | EditorConfig for VS Code | コーディングスタイルを統一するため拡張機能 |
-    | Prettier - Code formatter | コードをきれいにフォーマットするための拡張機能 |
-    | Sorting HTML and Jade attributes | HTML 属性をソートするための拡張機能 |
-    | HTMLHint | HTML のエラーなどを表示することができる拡張機能 |
-    | stylelint | CSS ファイルや SCSS ファイルの構文エラーを検知したり、エラーを自動修復するための拡張機能 |
-    | ESLint | JavaScript や TypeScript の構文エラーを検知できる拡張機能 |
-    | Code Spell Checker | 英単語のスペルチェックをしてくれる拡張機能 |
-    | HTML CSS Support | CSS 側で作った Class 名が候補に出るようになる拡張機能 |
+- 下記の拡張機能をインストールする
+  | 拡張機能名 | 説明 |
+  | :---------- | :--------------------------------------------------------------------------------- |
+  | Japanese Language Pack For Visual Studio Code | VSCode を日本語化してくれる拡張機能 |
+  | Material Icon Theme | ファイルツリーのアイコンをマテリアルアイコンに変更することができる拡張機能 |
+  | Live Server | Web サイトを PC 上で確認することができるローカルサーバーを簡単に立ち上げることができるできる拡張機能 |
+  | Live Sass Compiler | VSCode で記述した Sass ファイルを CSS にコンパイルしてくれる拡張機能(Last Update Date が新しいもの) |
+  | JS & CSS Minifier (Minify) | javascript と css を圧縮・軽量化(Minify)する拡張機能 |
+  | Highlight Matching Tag | 開始タグと終了タグのペアを分かりやすく表示してくれる拡張機能 |
+  | indent-rainbow | インデントの階層ごとに色を付けてくれる拡張機能 |
+  | EditorConfig for VS Code | コーディングスタイルを統一するため拡張機能 |
+  | Prettier - Code formatter | コードをきれいにフォーマットするための拡張機能 |
+  | Sorting HTML and Jade attributes | HTML 属性をソートするための拡張機能 |
+  | HTMLHint | HTML のエラーなどを表示することができる拡張機能 |
+  | stylelint | CSS ファイルや SCSS ファイルの構文エラーを検知したり、エラーを自動修復するための拡張機能 |
+  | ESLint | JavaScript や TypeScript の構文エラーを検知できる拡張機能 |
+  | Code Spell Checker | 英単語のスペルチェックをしてくれる拡張機能 |
+  | HTML CSS Support | CSS 側で作った Class 名が候補に出るようになる拡張機能 |
 
 ## Visial Studio Code 設定
 
@@ -102,6 +100,7 @@
   "editor.renderWhitespace": "all", // 半角スペースを可視化
   "editor.renderControlCharacters": true, // 制御文字を可視化
   "explorer.compactFolders": false, // エクスプローラーのフォルダ階層をまとめない
+  "eslint.validate": ["javascript", "typescript"],
   "files.exclude": {
     "**/node_modules": true // エクスプローラーからnode_modulesを除外
   },
@@ -426,15 +425,25 @@ trim_trailing_whitespace = false
       "es2021": true,
       "jquery": true
     },
-    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "eslint-config-prettier"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": "latest",
       "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["@typescript-eslint", "import", "unused-imports"],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".ts"]
+        }
+      }
+    },
     "rules": {
       "@typescript-eslint/no-unused-vars": "off",
+      "sort-imports": 0,
+      "import/order": [2, { "alphabetize": { "order": "asc" } }],
+      "unused-imports/no-unused-imports": "error"
     }
   }
   ```
@@ -514,7 +523,7 @@ trim_trailing_whitespace = false
         <section> // Webサイト内で文章のまとまりを明示するタグ。基本的に子要素に見出し（h1〜h6）を持つ
           <h1></h1>
         </section>
-      <article>
+      </article>
     </main>
     <aside> // サイドバーのように補助的なコンテンツを明示するタグ。広告、人気記事、新着記事、SNSシェアボタンなどのコンテンツを含んだ形で使用
     </aside>

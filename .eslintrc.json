@@ -10,7 +10,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "import", "'unused-imports'"],
+  "plugins": ["@typescript-eslint", "import", "unused-imports"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -19,9 +19,9 @@
     }
   },
   "rules": {
-    "@typescript-eslint/no-unused-vars": "off", //unused-importsを使うため削除
-    "unused-imports/no-unused-imports": "error", //不要なimportの削除
+    "@typescript-eslint/no-unused-vars": "off",
     "sort-imports": 0,
-    "import/order": [2, { "alphabetize": { "order": "asc" } }]
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
+    "unused-imports/no-unused-imports": "error"
   }
 }
