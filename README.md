@@ -326,6 +326,21 @@ https://github.com/nicolas-cusan/destyle.css
 - 赤枠が外枠、橙枠、緑枠が内枠
   ![](./readme/images/home-area.png)
 
+## Grid レイアウト
+
+2 次元のレイアウトを作るときにおすすめ
+https://coliss.com/articles/build-websites/operation/css/grid-for-layout-flexbox-for-components.html
+
+## Flex レイアウト
+
+1 次元のレイアウトを作るときにおすすめ
+
+## margin の方向
+
+top なら top、right なら right で方向を統一すること。
+理由は 2 つ。可読性の問題。もう 1 点は仕様の問題。
+2 点目は上に並んでいる要素で maring-bottom を指定して、下に並んでいる要素に maring-top を指定すると打ち消しあってしまう事象がある。
+
 ## ICON
 
 https://fonts.google.com/icons?selected=Material+Icons
