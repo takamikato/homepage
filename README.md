@@ -48,7 +48,16 @@
 - 以下のコマンド実行（Version が表示されれば OK）
   - `yarn --version`
 - Windows PowerShell を終了する
-- これより以下の作業は Visial Studio Code のターミナルから実行する
+
+## Visual Studio Code 起動する前に
+
+- エクスプローラーで作業フォルダを作成
+
+## Visual Studio Code 起動
+
+- ファイルメニュー - フォルダを開くで上記で作成したフォルダを指定
+- ターミナルメニュー - 新しいターミナルを選択
+- これより以下の作業に出てくるコマンドはこのターミナルから実行する
 
 ## Visial Studio Code 拡張機能インストール
 
@@ -75,8 +84,6 @@
 
 ## Visial Studio Code 設定
 
-- エクスプローラーなどでフォルダを作成
-- ファイルメニュー
 - ルートフォルダに「.vscode」フォルダを作成
 - 「setting.json」ファイルを作成
 - 以下の内容で保存(コメント部分は消してください)
@@ -458,19 +465,6 @@ trim_trailing_whitespace = false
 - TypeScript の設定ファイルを作成するために以下のコマンド実行
   - `yarn run tsc --init`
 
-## SCSS→CSS コンバート
-
-- Visual Studio Code の右下バーの Watch Sass を押下することで scss ファイル保存時に css にコンバートしてくれる
-  ![](./readme/images/watchscss.png)
-
-## ResetCSS
-
-- ブラウザによって見え方が変わらないようブラウザがデフォルトで持っている CSS を打ち消す CSS
-- 今回は h1 タグであっても h2 タグであっても共通の大きさに設定される destyle.css を採用
-- 0 からスタイリングする場合におすすめのリセット CSS
-
-https://github.com/nicolas-cusan/destyle.css
-
 ## HTML Living Standard
 
 - HTML Living Standard とは、Apple・Mozilla・Opera の開発者によって設立された WHATWG という組織が策定する HTML の仕様のこと
@@ -556,6 +550,19 @@ top なら top、right なら right で方向を統一すること。
 https://fonts.google.com/icons?selected=Material+Icons
 
 # CSS
+
+## SCSS→CSS コンバート
+
+- Visual Studio Code の右下バーの Watch Sass を押下することで scss ファイル保存時に css にコンバートしてくれる
+  ![](./readme/images/watchscss.png)
+
+## ResetCSS
+
+- ブラウザによって見え方が変わらないようブラウザがデフォルトで持っている CSS を打ち消す CSS
+- 今回は h1 タグであっても h2 タグであっても共通の大きさに設定される destyle.css を採用
+- 0 からスタイリングする場合におすすめのリセット CSS
+
+https://github.com/nicolas-cusan/destyle.css
 
 ## ピュア CSS によるチェックリスト
 
