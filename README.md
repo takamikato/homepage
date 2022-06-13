@@ -385,7 +385,8 @@ trim_trailing_whitespace = false
 }
 ```
 
-- ジェネレータサイトがあるので自分の好みの設定で作成（https://csscomb.herokuapp.com/config）
+- ジェネレータサイトがあるので自分の好みの設定で作成しても OK
+  （https://csscomb.herokuapp.com/config）
 
 ## ESLint 導入（任意）
 
@@ -395,13 +396,13 @@ trim_trailing_whitespace = false
   - `yarn eslint --init`
   - 以下の設定を選択
   ```
-  √ How would you like to use ESLint? · problems
-  √ What type of modules does your project use? · esm
-  √ Which framework does your project use? · none
-  √ Does your project use TypeScript? · No / Yes
+  √ How would you like to use ESLint? · problems(真ん中の選択肢)
+  √ What type of modules does your project use? · esm(一番上の選択肢)
+  √ Which framework does your project use? · None of these
+  √ Does your project use TypeScript? · Yes
   √ Where does your code run? · browser
   √ What format do you want your config file to be in? · JSON
-  √ Would you like to install them now? · No / Yes
+  √ Would you like to install them now? · Yes
   √ Which package manager do you want to use? · yarn
   ```
 - 以下のコマンド実行（ESLint のコードフォーマットに関連するルールを無効化し、prettier コードフォーマットを優先させるプラグイン）
