@@ -47,6 +47,8 @@
   - Y を入力
 - 以下のコマンド実行（Version が表示されれば OK）
   - `yarn --version`
+- Windows PowerShell を終了する
+- これより以下の作業は Visial Studio Code のターミナルから実行する
 
 ## Visial Studio Code 拡張機能インストール
 
