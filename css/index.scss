@@ -1,15 +1,15 @@
 .container {
   display: grid;
-  grid-template: '... ...... ...... ...... ...' 20px
-  '...... header header header ......' auto
-  '...... ...... ...... ...... ......' 20px
-  'nav    nav    nav    nav    nav   ' auto
-  'img    img    img    img    img   ' auto
-  '...... ...... ...... ...... ......' 80px
-  'main   main   main   main   main  ' 1fr
-  '...... ...... ...... ...... ......' 50px
-  'footer footer footer footer footer' auto
-  / 1fr minmax(1050px, 1fr) 30px 200px 1fr;
+  grid-template: '...... ...... ......' 20px
+  '...... header ......' auto
+  '...... ...... ......' 20px
+  'nav    nav    nav   ' auto
+  'slick  slick  slick ' auto
+  '...... ...... ......' 80px
+  '...... main   ......' 1fr
+  '...... ...... ......' 50px
+  'footer footer footer' auto
+  / 1fr minmax(1280px, 1fr) 1fr;
 }
 
 .header {
@@ -109,12 +109,12 @@
   content: '';
 }
 
-.img {
-  grid-area: img;
+.slick {
+  grid-area: slick;
   position: relative;
 }
 
-.img > div {
+.slick > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,97 +122,84 @@
   text-align: center;
 }
 
-.img > div > p:nth-of-type(1) {
-  font-size: 6rem;
-}
-
-.img > div > p:nth-of-type(2) {
-  font-size: 2.5rem;
-}
-
-.slick-img {
+.slick-image {
   height: 350px;
   object-fit: cover;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  grid-area: main;
-  gap: 30px;
+.slick-title-en {
+  font-size: 6rem;
 }
 
-.main > section > div:nth-of-type(1) {
+.slick-title-jp {
+  font-size: 2.5rem;
+}
+
+.main {
+  grid-area: main;
+}
+
+.article {
   display: flex;
   flex-direction: column;
+  gap: 120px;
+}
+
+.section-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
-  padding: 0 120px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--color-primary);
 }
 
-.main > section > div:nth-of-type(2) {
+.section-description-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
-  padding: 20px 120px;
+  padding: 30px 0;
 }
 
-.main > section > div:nth-of-type(3) {
+.section-image-wrapper {
   position: relative;
 }
 
-.main > section > div:nth-of-type(3) > div {
+.business-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.section-image-link {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
+  gap: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-}
-
-.main > section > div:nth-of-type(3) > div > div {
-  display: flex;
-  gap: 10px;
-}
-
-.main > section > div:nth-of-type(3) > div > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 240px;
-  height: 170px;
-  border-radius: 10px;
-  background-color: rgb(255 255 255 / 50%);
-}
-
-.main > section > div:nth-of-type(3) > div > div > div > img {
-  width: 140px;
-  height: 105px;
-  object-fit: scale-down;
-}
-
-.main > section > div:nth-of-type(3) > div > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 540px;
-  height: 80px;
+  width: 550px;
+  padding: 30px;
   border: 2px solid var(--color-secondary);
-  border-radius: 10px;
   background: var(--color-white);
 }
 
-.main > section > div:nth-of-type(3) > a:hover {
-  text-decoration: none;
+.section-image-link:hover {
+  background: var(--color-light-gray);
 }
 
-.main > section > img {
-  border-radius: 10px;
-  object-fit: cover;
+.section-image-link > span {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.section-image-link::after {
+  width: 18px;
+  height: 18px;
+  background: url('../images/arrow_right_black_18dp.svg');
+  content: '';
 }
 
 .aside {
@@ -227,6 +214,29 @@
 
 .aside > ul > li > .active {
   background: #559912;
+}
+
+.return-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.return-top > a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.return-top > a::before {
+  transform: rotate(-45deg);
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  border-top: 2px solid #2a872a;
+  border-right: 2px solid #2a872a;
+  content: '';
 }
 
 .footer {

@@ -2,9 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    <title>株式会社アールピーシー</title>
+    <title>株式会社XXX</title>
     <meta name="description" content />
 
     <meta property="og:type" content />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="../css/index.min.css" />
   </head>
   <body class="container">
-    <header class="header">
+    <header id="header" class="header">
       <a>
         <img src="../images/logo.png" width="300" />
       </a>
@@ -32,7 +32,7 @@
         <a class="color-gray font-size-m" href="#">採用情報</a>
         <a class="color-gray font-size-m" href="#">問い合わせ</a>
       </div>
-    </header>
+    </headedr>
     <nav class="nav">
       <ul>
         <li>
@@ -85,71 +85,95 @@
         </li>
       </ul>
     </nav>
-    <div class="img">
+    <div class="slick">
       <ul id="slick">
         <li>
-          <img class="slick-img" src="../images/img_slide01.jpg" width="100%" />
+          <img class="slick-image" src="../images/img_slide01.jpg" width="100%" />
         </li>
         <li>
-          <img class="slick-img" src="../images/img_slide02.jpg" width="100%" />
+          <img class="slick-image" src="../images/img_slide02.jpg" width="100%" />
         </li>
         <li>
-          <img class="slick-img" src="../images/img_slide03.jpg" width="100%" />
+          <img class="slick-image" src="../images/img_slide03.jpg" width="100%" />
         </li>
         <li>
-          <img class="slick-img" src="../images/img_slide04.jpg" width="100%" />
+          <img class="slick-image" src="../images/img_slide04.jpg" width="100%" />
         </li>
         <li>
-          <img class="slick-img" src="../images/img_slide06.jpg" width="100%" />
+          <img class="slick-image" src="../images/img_slide06.jpg" width="100%" />
         </li>
       </ul>
       <div>
-        <p class="color-white font-size-l font-bold">Be Reliable.</p>
-        <p class="color-white font-size-l font-bold">すべては信頼からはじまる</p>
+        <p class="slick-title-en color-white font-bold">Be Reliable.</p>
+        <p class="slick-title-jp color-white font-bold">すべては信頼からはじまる</p>
       </div>
     </div>
     <main class="main">
-      <section id="business">
-        <div>
-          <h1 class="color-secondary">事業内容</h1>
-          <p class="color-dark font-size-3l">Business</p>
-        </div>
-        <div>
-          <p class="color-dark font-size-m">
-            アールピーシーは、ソフトウェアの開発、システム基盤構築、システム運用 / 保守 /
-            サポートを通じてクライアントをサポートするIT企業です。
-          </p>
-          <p class="color-dark font-size-m">
-            「信頼」という言葉を胸に、高い技術力で最適なソリューションを提供しています。
-          </p>
-        </div>
-        <div>
-          <img src="../images/img_slide03.jpg" height="300" />
-
-          <a class="color-secondary font-size-4l" href="#">詳しく見る</a>
-        </div>
-      </section>
-      <section id="recruitment">
-        <div>
-          <h1 class="color-secondary">採用情報</h1>
-          <p class="color-dark font-size-s">Recruitment</p>
-        </div>
-        <img src="../images/bg_recruit.jpg" width="100%" />
-      </section>
-      <section id="access">
-        <div>
-          <h1 class="color-secondary">アクセス</h1>
-          <p class="color-dark font-size-s">Access</p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7125728269743!2d139.70101761525822!3d35.65945258019941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b584326cd2b%3A0xcbea7fbefd1d9ce!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yS5LiB55uu77yS77yQ4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1542866504319"
-          width="100%"
-          height="600"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen
-        ></iframe>
-      </section>
+      <article class="article">
+        <section id="business">
+          <div class="section-title-wrapper">
+            <h1 class="color-secondary">BUSINESS</h1>
+            <p class="color-dark font-size-4l">事業内容</p>
+          </div>
+          <div class="section-description-wrapper">
+            <p class="color-dark font-size-m">
+              XXXは、ソフトウェアの開発、システム基盤構築、システム運用 / 保守 /
+              サポートを通じてクライアントをサポートするIT企業です。
+            </p>
+            <p class="color-dark font-size-m">
+              「信頼」という言葉を胸に、高い技術力で最適なソリューションを提供しています。
+            </p>
+          </div>
+          <div class="section-image-wrapper">
+            <img class="business-image" src="../images/img_slide03.jpg" />
+            <a class="section-image-link color-secondary font-size-4l" href="#">
+              <span>詳しく見る</span>
+            </a>
+          </div>
+        </section>
+        <section id="recruitment">
+          <div class="section-title-wrapper">
+            <h1 class="color-secondary">RECRUITMENT</h1>
+            <p class="color-dark font-size-4l">採用情報</p>
+          </div>
+          <div class="section-description-wrapper">
+            <p class="color-dark font-size-m">共に高め合い、成長し続ける人を待っています。</p>
+          </div>
+          <div class="section-image-wrapper">
+            <img class="business-image" src="../images/bg_recruit.jpg" />
+            <a class="section-image-link color-secondary font-size-4l" href="#">
+              <span>詳しく見る</span>
+            </a>
+          </div>
+        </section>
+        <section id="access">
+          <div class="section-title-wrapper">
+            <h1 class="color-secondary">ACCESS</h1>
+            <p class="color-dark font-size-4l">アクセス</p>
+          </div>
+          <div class="section-description-wrapper">
+            <p class="color-dark font-size-m">東京都渋谷区渋谷2-20-12 渋谷日永ビル6F</p>
+            <p class="color-dark font-size-m">JRほか各線・渋谷駅 宮益坂口より徒歩5分</p>
+            <a
+              class="color-secondary font-size-m"
+              href="https://www.google.co.jp/maps/place/%E3%80%92150-0002+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B7%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%91%EF%BC%92/@35.6594526,139.7010176,17z/data=!3m1!4b1!4m2!3m1!1s0x60188b584326cd2b:0xcbea7fbefd1d9ce"
+              target="_blank"
+              >Google Map</a
+            >
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7125728269743!2d139.70101761525822!3d35.65945258019941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b584326cd2b%3A0xcbea7fbefd1d9ce!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yS5LiB55uu77yS77yQ4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1542866504319"
+            width="100%"
+            height="600"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </article>
+      <div class="return-top font-size-4l">
+        <a class="color-secondary" href="#header">TOP</a>
+      </div>
     </main>
     <footer class="footer">
       <div class="sitemap-wrapper">
@@ -233,23 +257,11 @@
         </div>
       </div>
       <div class="copyright">
-        <p class="color-white font-size-m">Copyright(C) 2022 RPC-ltd. All rights reserved.</p>
+        <p class="color-white font-size-m">Copyright(C) 2022 xxx-ltd. All rights reserved.</p>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#slick').slick({
-          arrows: false,
-          autoplay: true,
-          centerMode: true,
-          dots: false,
-          infinite: true,
-          speed: 300,
-        });
-      });
-    </script>
     <script src="../js/index.min.js"></script>
   </body>
 </html>
