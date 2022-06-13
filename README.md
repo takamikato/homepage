@@ -472,6 +472,7 @@ trim_trailing_whitespace = false
 - 正しい書き方をすれば SEO の効果を得られる！という記事が多いが、記事の質や表示速度の方がよっぽど重要
 
 - イメージ
+  jam25 さんのページを参考(https://jam25.jp/)
   　![](./readme/images/layout.png)
 - ボイラープレート
   - 参考サイト
