@@ -73,9 +73,11 @@
 
 ## Visial Studio Code 設定
 
+- エクスプローラーなどでフォルダを作成
+- ファイルメニュー
 - ルートフォルダに「.vscode」フォルダを作成
 - 「setting.json」ファイルを作成
-- 以下の内容で保存
+- 以下の内容で保存(コメント部分は消してください)
 
 ```
 {
@@ -83,7 +85,7 @@
   "csscomb.preset": "./csscomb.json", // CSSプロパティソート設定ファイル
   "csscomb.formatOnSave": true, // 保存時にCSSプロパティソート
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true // 保存時にESLint実行
+    "source.fixAll.eslint": true, // 保存時にESLint実行
     "source.fixAll.stylelint": true // 保存時にStyleLint実行
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode", // エディタフォーマッター
@@ -112,14 +114,14 @@
   "less.validate": false, // Visial Studio Codeのlessバリデーションを除外
   "scss.validate": false, // Visial Studio Codeのscssバリデーションを除外
   "workbench.iconTheme": "material-icon-theme", // エクスプローラーのアイコン
-  "workbench.tree.indent": 20, // エクスプローラーのツリーインデント幅
+  "workbench.tree.indent": 20 // エクスプローラーのツリーインデント幅
 }
 ```
 
 ## EditorConfig 設定
 
 - ルートフォルダに「.editorconfig」ファイルを作成
-- 以下の内容で保存
+- 以下の内容で保存(コメント部分は消してください)
 
 ```
 root = true
@@ -141,7 +143,7 @@ trim_trailing_whitespace = false
 ## Prettier 設定
 
 - ルートフォルダに「.prettierrc」ファイルを作成
-- 以下の内容で保存
+- 以下の内容で保存(コメント部分は消してください)
 
 ```
 {
@@ -180,6 +182,209 @@ trim_trailing_whitespace = false
 ## CSSComb 設定
 
 - ルートフォルダに「csscomb.json」ファイルを作成
+- 以下の内容で保存
+
+```
+{
+  "remove-empty-rulesets": true,
+  "always-semicolon": true,
+  "color-case": "lower",
+  "block-indent": "  ",
+  "color-shorthand": false,
+  "element-case": "lower",
+  "eof-newline": true,
+  "leading-zero": true,
+  "quotes": "single",
+  "sort-order-fallback": "abc",
+  "space-after-colon": " ",
+  "space-before-combinator": " ",
+  "space-after-combinator": " ",
+  "space-between-declarations": "\n",
+  "space-before-opening-brace": " ",
+  "space-after-opening-brace": "\n",
+  "space-after-selector-delimiter": " ",
+  "space-before-selector-delimiter": "",
+  "space-before-closing-brace": "\n",
+  "strip-spaces": true,
+  "tab-size": true,
+  "unitless-zero": true,
+  "vendor-prefix-align": true,
+  "sort-order": [
+    "$variable",
+    "$import",
+    "$extend",
+    "$include",
+    "display",
+    "flex",
+    "flex-grow",
+    "flex-shrink",
+    "flex-basis",
+    "flex-flow",
+    "flex-direction",
+    "flex-wrap",
+    "grid-template",
+    "grid-template-rows",
+    "grid-template-columns",
+    "grid-template-areas",
+    "grid-auto-rows",
+    "grid-auto-columns",
+    "grid-auto-flow",
+    "grid-row",
+    "grid-column",
+    "grid-row-start",
+    "grid-row-end",
+    "grid-column-start",
+    "grid-column-end",
+    "grid-area",
+    "gap",
+    "justify-content",
+    "align-content",
+    "align-items",
+    "align-self",
+    "order",
+    "visibility",
+    "opacity",
+    "clip ",
+    "clip-path",
+    "list-style",
+    "list-style-type",
+    "list-style-position",
+    "list-style-image",
+    "position",
+    "top",
+    "right",
+    "bottom",
+    "left",
+    "z-index",
+    "float",
+    "clear",
+    "transform",
+    "width",
+    "min-width",
+    "max-width",
+    "height",
+    "min-height",
+    "max-height",
+    "margin",
+    "margin-top",
+    "margin-right",
+    "margin-bottom",
+    "margin-left",
+    "padding",
+    "padding-top",
+    "padding-right",
+    "padding-bottom",
+    "padding-left",
+    "overflow",
+    "overflow-x",
+    "overflow-y",
+    "border",
+    "border-top",
+    "border-right",
+    "border-bottom",
+    "border-left",
+    "border-width",
+    "border-top-width",
+    "border-right-width",
+    "border-bottom-width",
+    "border-left-width",
+    "border-style",
+    "border-top-style",
+    "border-right-style",
+    "border-bottom-style",
+    "border-left-style",
+    "border-color",
+    "border-top-color",
+    "border-right-color",
+    "border-bottom-color",
+    "border-left-color",
+    "border-image",
+    "border-image-source",
+    "border-image-slice",
+    "border-image-width",
+    "border-image-outset",
+    "border-image-repeat",
+    "border-radius",
+    "border-top-left-radius",
+    "border-top-right-radius",
+    "border-bottom-right-radius",
+    "border-bottom-left-radius",
+    "box-sizing",
+    "box-shadow",
+    "background",
+    "background-image",
+    "background-position",
+    "background-size",
+    "background-repeat",
+    "background-origin",
+    "background-clip",
+    "background-attachment",
+    "background-color",
+    "object-fit",
+    "color",
+    "font",
+    "font-style",
+    "font-variant",
+    "font-weight",
+    "font-stretch",
+    "font-size",
+    "line-height",
+    "font-family",
+    "letter-spacing",
+    "text-decoration",
+    "text-decoration-color",
+    "text-decoration-style",
+    "text-decoration-line",
+    "text-align",
+    "text-indent",
+    "text-transform",
+    "white-space",
+    "word-break",
+    "word-spacing",
+    "word-wrap",
+    "text-shadow",
+    "table-layout",
+    "border-collapse",
+    "border-spacing",
+    "empty-cells",
+    "caption-side",
+    "vertical-align",
+    "content",
+    "quotes",
+    "counter-increment",
+    "counter-reset",
+    "outline",
+    "outline-color",
+    "outline-style",
+    "outline-width",
+    "cursor",
+    "resize",
+    "transition",
+    "transition-property",
+    "transition-duration",
+    "transition-timing-function",
+    "transition-delay",
+    "animation",
+    "animation-name",
+    "animation-duration",
+    "animation-timing-function",
+    "animation-delay",
+    "animation-iteration-count",
+    "animation-direction",
+    "animation-fill-mode",
+    "animation-play-state",
+    "unicode-bidi",
+    "direction",
+    "page-break-before",
+    "page-break-after",
+    "page-break-inside",
+    "widows",
+    "orphans",
+    "scroll-behavior"
+  ]
+}
+```
+
 - ジェネレータサイトがあるので自分の好みの設定で作成（https://csscomb.herokuapp.com/config）
 
 ## ESLint 導入（任意）
