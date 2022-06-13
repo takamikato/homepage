@@ -457,8 +457,6 @@ trim_trailing_whitespace = false
 
 - TypeScript の設定ファイルを作成するために以下のコマンド実行
   - `yarn run tsc --init`
-- ts ファイルの変更を監視して js ファイルを生成するために以下のコマンド実行
-  - `yarn run tsc -w`
 
 ## SCSS→CSS コンバート
 
