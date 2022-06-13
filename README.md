@@ -165,7 +165,7 @@ trim_trailing_whitespace = false
 ## Code Spell Checker 設定
 
 - ルートフォルダに「cspell.json」ファイルを作成
-- 以下の内容で保存
+- 以下の内容で保存(コメント部分は消してください)
 
 ```
 {
