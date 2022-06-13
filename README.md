@@ -437,7 +437,7 @@ trim_trailing_whitespace = false
 - 以下のコマンド実行
   - `yarn add --dev stylelint stylelint-config-standard stylelint-scss stylelint-config-standard-scss stylelint-config-prettier`
 - ルートフォルダに「.stylelintrc.json」を作成
-- 以下の内容で保存
+- 以下の内容で保存(コメント部分は消してください)
 
 ```
 {
@@ -450,6 +450,10 @@ trim_trailing_whitespace = false
 ```
 
 ## TypeScript 導入（任意）
+
+- TypeScript を導入する
+
+  - `yarn add typescript`
 
 - TypeScript の設定ファイルを作成するために以下のコマンド実行
   - `yarn run tsc --init`
