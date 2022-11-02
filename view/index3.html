@@ -4,49 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=0" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="preload" href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/base.css" as="style" />
+    <link rel="preload" href="../css/base.css" as="style" />
 
     <!-- This site is optimized with the Yoast SEO plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>株式会社Leo Sophia（レオソフィア）</title>
+    <title>株式会社アールピーシー</title>
     <meta
       name="description"
-      content="株式会社Leo Sophia（レオソフィア）の公式コーポレートサイトです。Leo Sophiaは、勝てるビジネスを創り続ける事業開発会社です。"
+      content="株式会社アールピーシーのコーポレートサイトです。システム開発からサーバー、ネットワークの構築、運用保守のサポート対応まで、クライアントの業務基盤を支える事業を展開しています。"
     />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta
-      property="og:description"
-      content="株式会社Leo Sophia（レオソフィア）の公式コーポレートサイトです。Leo Sophiaは、勝てるビジネスを創り続ける事業開発会社です。"
-    />
 
     <!-- / Yoast SEO plugin. -->
     <link
       id="iziModal-css"
       rel="stylesheet"
-      href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/library/iziModal.min.css?ver=5.5.10"
+      href="../css/library/iziModal.min.css?ver=5.5.10"
       type="text/css"
       media="all"
     />
-    <link
-      id="loader-css"
-      rel="stylesheet"
-      href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/loader.css?ver=200522-5"
-      type="text/css"
-      media="all"
-    />
-    <link
-      id="base-css"
-      rel="stylesheet"
-      href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/base.css?ver=201030-1"
-      type="text/css"
-      media="all"
-    />
-    <link
-      id="responsive-css"
-      rel="stylesheet"
-      href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/responsive.css?ver=200914-2"
-      type="text/css"
-      media="all"
-    />
+    <link id="loader-css" rel="stylesheet" href="../css/loader.css?ver=200522-5" type="text/css" media="all" />
+    <link id="base-css" rel="stylesheet" href="../css/base.css?ver=201030-1" type="text/css" media="all" />
+    <link id="responsive-css" rel="stylesheet" href="../css/responsive.css?ver=200914-2" type="text/css" media="all" />
     <link
       id="noto-css"
       rel="stylesheet"
@@ -61,42 +39,28 @@
       type="text/css"
       media="all"
     />
-    <link
-      id="motion-css"
-      rel="stylesheet"
-      href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/motion.css?ver=200522-5"
-      type="text/css"
-      media="all"
-    />
-    <link
-      id="top-css"
-      rel="stylesheet"
-      href="https://leosophia.co.jp/wp-content/themes/LeoSophia/css/page/top.css?ver=5.5.10"
-      type="text/css"
-      media="all"
-    />
+    <link id="motion-css" rel="stylesheet" href="../css/motion.css?ver=200522-5" type="text/css" media="all" />
+    <link id="top-css" rel="stylesheet" href="../css/page/top.css?ver=5.5.10" type="text/css" media="all" />
     <link
       id="jquery-lazyloadxt-fadein-css-css"
       rel="stylesheet"
-      href="//leosophia.co.jp/wp-content/plugins/a3-lazy-load/assets/css/jquery.lazyloadxt.fadein.css?ver=5.5.10"
+      href="../css/assets/jquery.lazyloadxt.fadein.css?ver=5.5.10"
       type="text/css"
       media="all"
     />
     <link
       id="a3a3_lazy_load-css"
       rel="stylesheet"
-      href="//leosophia.co.jp/wp-content/uploads/sass/a3_lazy_load.min.css?ver=1591784836"
+      href="../css/sass/a3_lazy_load.min.css?ver=1591784836"
       type="text/css"
       media="all"
     />
   </head>
-  <body id="corporateSite" class="topPage" cz-shortcut-listen="true">
+  <body id="corporateSite" class="topPage" cz-shortcut-listen="true" onload="javascript:loadData();">
     <header class style="opacity: 1">
       <div class="inner celarfix">
         <div id="headerLogo">
-          <a href="/">
-            <img src="../images/logo.png" width="150" height="40" />
-          </a>
+          <a href="/"> <img src="../images/logo.png" width="150" /> </a>
         </div>
         <nav id="gnavPanel">
           <ul class="clearfix">
@@ -133,7 +97,7 @@
     </header>
 
     <div class="contentWrap" style="opacity: 1">
-      <section id="atf" class="windowHeight" style="height: 453px">
+      <section id="atf" class="windowHeight" style="height: 337px">
         <h1 class="title">
           <span>ALWAYS</span>
           <span>CHALLENGING</span>
@@ -154,9 +118,19 @@
                 "
               ></li>
               <li
-                class
+                class="active"
                 style="
                   background-image: url('http://localhost:5500/images/img_slide02.jpg');
+                  position: absolute;
+                  overflow: hidden;
+                  display: list-item;
+                  top: 0px;
+                  left: 0px;
+                "
+              ></li>
+              <li
+                style="
+                  background-image: url('http://localhost:5500/images/img_slide03.jpg');
                   position: absolute;
                   overflow: hidden;
                   display: none;
@@ -165,27 +139,13 @@
                 "
               ></li>
               <li
-                class
                 style="
                   background-image: url('http://localhost:5500/images/img_slide04.jpg');
                   position: absolute;
                   overflow: hidden;
-                  display: list-item;
+                  display: none;
                   top: 0px;
                   left: 0px;
-                  opacity: 0.224177;
-                "
-              ></li>
-              <li
-                class="active"
-                style="
-                  background-image: url('http://localhost:5500/images/img_slide01.jpg');
-                  position: absolute;
-                  overflow: hidden;
-                  display: list-item;
-                  top: 0px;
-                  left: 0px;
-                  opacity: 0.775823;
                 "
               ></li>
             </ul>
@@ -202,9 +162,19 @@
                 "
               ></li>
               <li
-                class
+                class="active"
                 style="
                   background-image: url('http://localhost:5500/images/img_slide02.jpg');
+                  position: absolute;
+                  overflow: hidden;
+                  display: list-item;
+                  top: 0px;
+                  left: 0px;
+                "
+              ></li>
+              <li
+                style="
+                  background-image: url('http://localhost:5500/images/img_slide03.jpg');
                   position: absolute;
                   overflow: hidden;
                   display: none;
@@ -213,27 +183,13 @@
                 "
               ></li>
               <li
-                class
                 style="
                   background-image: url('http://localhost:5500/images/img_slide04.jpg');
                   position: absolute;
                   overflow: hidden;
-                  display: list-item;
+                  display: none;
                   top: 0px;
                   left: 0px;
-                  opacity: 0.224177;
-                "
-              ></li>
-              <li
-                class="active"
-                style="
-                  background-image: url('http://localhost:5500/images/img_slide06.jpg');
-                  position: absolute;
-                  overflow: hidden;
-                  display: list-item;
-                  top: 0px;
-                  left: 0px;
-                  opacity: 0.775823;
                 "
               ></li>
             </ul>
@@ -242,77 +198,25 @@
         <p>we create exciting businesses</p>
         <ul class="snsWrap clearfix">
           <li>
-            <a href="https://www.instagram.com/leosophia.p/?hl=ja" target="_blank"
-              ><svg
-                id="レイヤー_1"
-                class="replace-svg replaced-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 22 22"
-                style="enable-background: new 0 0 22 22"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="M11,2.8c2.7,0,3,0,4,0.1c1,0,1.5,0.2,1.9,0.3c0.5,0.2,0.8,0.4,1.1,0.7c0.3,0.3,0.6,0.7,0.7,1.1C18.8,5.4,19,5.9,19,6.9   c0,1.1,0.1,1.4,0.1,4s0,3-0.1,4c0,1-0.2,1.5-0.3,1.9c-0.2,0.5-0.4,0.8-0.7,1.1c-0.3,0.3-0.7,0.6-1.1,0.7S16,18.9,15,18.9   c-1.1,0-1.4,0.1-4,0.1s-3,0-4-0.1c-1,0-1.5-0.2-1.9-0.3c-0.5-0.2-0.8-0.4-1.1-0.7c-0.3-0.3-0.6-0.7-0.7-1.1C3.2,16.4,3,15.9,3,14.9   c0-1.1-0.1-1.4-0.1-4s0-3,0.1-4c0-1,0.2-1.5,0.3-1.9C3.5,4.5,3.7,4.2,4,3.9s0.7-0.6,1.1-0.7C5.5,3.1,6,2.9,7,2.9   C8,2.8,8.3,2.8,11,2.8 M11,1C8.3,1,7.9,1,6.9,1.1c-1.1,0-1.8,0.2-2.4,0.5C3.8,1.9,3.3,2.2,2.7,2.8S1.8,3.9,1.5,4.6   C1.3,5.2,1.1,6,1,7c0,1.1-0.1,1.4-0.1,4.1s0,3.1,0.1,4.1c0,1.1,0.2,1.8,0.5,2.4c0.3,0.7,0.6,1.2,1.2,1.8c0.6,0.6,1.1,0.9,1.8,1.2   c0.6,0.2,1.4,0.4,2.4,0.5c1.1,0,1.4,0.1,4.1,0.1s3.1,0,4.1-0.1c1.1,0,1.8-0.2,2.4-0.5c0.7-0.3,1.2-0.6,1.8-1.2   c0.6-0.6,0.9-1.1,1.2-1.8c0.2-0.6,0.4-1.4,0.5-2.4c0-1.1,0.1-1.4,0.1-4.1S21.1,8,21,7c0-1.1-0.2-1.8-0.5-2.4   c-0.3-0.7-0.6-1.2-1.2-1.8s-1.1-0.9-1.8-1.2c-0.6-0.2-1.4-0.4-2.4-0.5S13.7,1,11,1L11,1z"
-                  ></path>
-                  <path
-                    d="M11,5.9c-2.8,0-5.1,2.3-5.1,5.1s2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1S13.8,5.9,11,5.9z M11,14.3c-1.8,0-3.3-1.5-3.3-3.3   S9.2,7.7,11,7.7s3.3,1.5,3.3,3.3S12.8,14.3,11,14.3z"
-                  ></path>
-                  <circle cx="16.3" cy="5.7" r="1.2"></circle>
-                </g>
-              </svg>
+            <a href="https://www.instagram.com/leosophia.p/?hl=ja" target="_blank">
+              <img src="../images/instagram.svg" class="replace-svg replaced-svg" />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/leosophia00" target="_blank"
-              ><svg
-                id="レイヤー_1"
-                class="replace-svg replaced-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 22 22"
-                style="enable-background: new 0 0 22 22"
-                xml:space="preserve"
-              >
-                <path
-                  d="M7,19.8c8.1,0,12.6-6.7,12.6-12.6c0-0.2,0-0.4,0-0.6c0.9-0.6,1.6-1.4,2.2-2.3C21,4.7,20.2,4.9,19.3,5  c0.9-0.5,1.6-1.4,1.9-2.4c-0.9,0.5-1.8,0.9-2.8,1.1c-0.8-0.9-2-1.4-3.2-1.4c-2.4,0-4.4,2-4.4,4.4c0,0.3,0,0.7,0.1,1  C7.2,7.5,4,5.8,1.8,3.1C1.4,3.8,1.2,4.5,1.2,5.3c0,1.5,0.8,2.9,2,3.7c-0.7,0-1.4-0.2-2-0.6c0,0,0,0,0,0.1c0,2.1,1.5,3.9,3.5,4.3  C4.3,12.9,3.9,13,3.5,13c-0.3,0-0.6,0-0.8-0.1c0.6,1.8,2.2,3,4.1,3.1c-1.5,1.2-3.4,1.9-5.5,1.9c-0.4,0-0.7,0-1.1-0.1  C2.2,19,4.5,19.8,7,19.8"
-                ></path>
-              </svg>
+            <a href="https://twitter.com/leosophia00" target="_blank">
+              <img src="../images/twitter.svg" class="replace-svg replaced-svg" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/LeoSophia.09.29.2014/" target="_blank"
-              ><svg
-                id="レイヤー_1"
-                class="replace-svg replaced-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 22 22"
-                style="enable-background: new 0 0 22 22"
-                xml:space="preserve"
-              >
-                <path
-                  id="f_3_"
-                  d="M12.5,21v-9.1h3.1l0.5-3.6h-3.5V6c0-1,0.3-1.7,1.8-1.7h1.9V1.1C16,1.1,14.9,1,13.6,1C10.9,1,9,2.7,9,5.7v2.6H5.9  v3.6H9V21H12.5z"
-                ></path>
-              </svg>
+            <a href="https://www.facebook.com/LeoSophia.09.29.2014/" target="_blank">
+              <img src="../images/facebook.svg" class="replace-svg replaced-svg" />
             </a>
           </li>
         </ul>
       </section>
 
       <section class="sec">
-        <div class="innerBasic trigger1 active">
+        <div class="innerBasic trigger1">
           <h2 class="titleWrap">
             <span class="sub"
               ><span
@@ -322,13 +226,15 @@
             <span class="title"
               ><span
                 ><span
-                  ><span>挑戦し続ける<br />事業家集団</span></span
+                  ><span>すべては<br />信頼からはじまる</span></span
                 ></span
               ></span
             >
           </h2>
           <div class="bodyWrap">
-            <p>Leo Sophiaはマーケティングのチカラを駆使して<br />勝てるビジネスを創り続ける事業開発会社です。</p>
+            <p>
+              アールピーシーは、ソフトウェアの開発、システム基盤構築、システム運用 / 保守 / サポートを通じて<br />クライアントをサポートするIT企業です。
+            </p>
           </div>
         </div>
       </section>
@@ -336,16 +242,14 @@
       <div class="sec">
         <div class="cmnBtnWrap">
           <div class="innerBasic">
-            <div class="trigger1 active">
+            <div class="trigger1">
               <div class="trigBase">
                 <a class="cmnBtnLDeco" href="/business/">
                   <div class="trigInner">
                     <div class="imgWrap">
                       <span
                         class="bg"
-                        style="
-                          background-image: url(https://leosophia.co.jp/wp-content/themes/LeoSophia/img/common/btn-b1.jpg?2010);
-                        "
+                        style="background-image: url(http://localhost:5500/images/bg_ptit_business.jpg)"
                       ></span>
                     </div>
                     <div class="layerWrap">
@@ -362,16 +266,14 @@
                 </a>
               </div>
             </div>
-            <div class="trigger1 horizontal rows3 clearfix active">
+            <div class="trigger1 horizontal rows3 clearfix">
               <div class="trigBase">
                 <a href="/company/">
                   <div class="trigInner">
                     <div class="imgWrap">
                       <span
                         class="bg"
-                        style="
-                          background-image: url(https://leosophia.co.jp/wp-content/themes/LeoSophia/img/common/btn-s1.jpg?2010);
-                        "
+                        style="background-image: url(http://localhost:5500/images/img_access_ph01.jpg)"
                       ></span>
                     </div>
                     <div class="titleWrap">
@@ -388,9 +290,7 @@
                     <div class="imgWrap">
                       <span
                         class="bg"
-                        style="
-                          background-image: url(https://leosophia.co.jp/wp-content/themes/LeoSophia/img/common/btn-s2.jpg?2010);
-                        "
+                        style="background-image: url(http://localhost:5500/images/img_slide06.jpg)"
                       ></span>
                     </div>
                     <div class="titleWrap">
@@ -407,9 +307,7 @@
                     <div class="imgWrap">
                       <span
                         class="bg"
-                        style="
-                          background-image: url(https://leosophia.co.jp/wp-content/themes/LeoSophia/img/common/btn-s3.jpg);
-                        "
+                        style="background-image: url(http://localhost:5500/images/img_msg_ph01.jpg)"
                       ></span>
                     </div>
                     <div class="titleWrap">
@@ -425,16 +323,14 @@
         </div>
         <div class="cmnBtnWrap">
           <div class="innerBasic">
-            <div class="trigger1 active">
+            <div class="trigger1">
               <div class="trigBase">
                 <a class="cmnBtnLDeco recruit" href="/recruit/" target="_blank">
                   <div class="trigInner">
                     <div class="imgWrap">
                       <span
                         class="bg"
-                        style="
-                          background-image: url(https://leosophia.co.jp/wp-content/themes/LeoSophia/img/common/btn-recruit-fx.jpg);
-                        "
+                        style="background-image: url(http://localhost:5500/images/bg_recruit.jpg)"
                       ></span>
                     </div>
                     <div class="layerWrap">
@@ -442,9 +338,7 @@
                         <span
                           ><span
                             class="bg"
-                            style="
-                              background-image: url(https://leosophia.co.jp/wp-content/themes/LeoSophia/img/common/btn-recruit.jpg);
-                            "
+                            style="background-image: url(http://localhost:5500/images/bg_ptit_recruit_career.jpg)"
                           ></span
                         ></span>
                       </span>
@@ -466,7 +360,7 @@
         </div>
       </div>
       <section class="sec">
-        <div class="innerBasic trigger1 active">
+        <div class="innerBasic trigger1">
           <h2 class="titleWrap">
             <span class="title"
               ><span
@@ -480,164 +374,23 @@
             >
           </h2>
           <div class="bodyWrap narrow">
-            <ul class="postWrap list clearfix">
-              <li>
-                <article>
-                  <a
-                    class="clearfix"
-                    href="https://leosophia.co.jp/news/%e3%83%aa%e3%83%a9%e3%83%83%e3%82%af%e3%82%b9%e9%96%a2%e9%80%a3%e4%ba%8b%e6%a5%ad%e3%82%92%e9%96%8b%e5%a7%8b%e3%81%97%e3%81%be%e3%81%97%e3%81%9f/"
-                  >
-                    <time datetime="2022-07-20">2022.07.20</time>
-                    <h3 class="title">リラックス関連事業を開始しました</h3>
-                    <span class="arrow basic"></span>
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <a class="clearfix" href="https://leosophia.co.jp/news/2022sd/">
-                    <time datetime="2022-07-15">2022.07.15</time>
-                    <h3 class="title">スイーツ事業を開始しました</h3>
-                    <span class="arrow basic"></span>
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <a class="clearfix" href="https://leosophia.co.jp/news/2021sd/">
-                    <time datetime="2022-01-05">2022.01.05</time>
-                    <h3 class="title">マシンピラティス事業を開始しました</h3>
-                    <span class="arrow basic"></span>
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <a class="clearfix" href="https://leosophia.co.jp/news/2021wv/">
-                    <time datetime="2021-12-09">2021.12.09</time>
-                    <h3 class="title">【2021年】冬季休業のお知らせ</h3>
-                    <span class="arrow basic"></span>
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <a class="clearfix" href="https://leosophia.co.jp/news/brunch-office-2021/">
-                    <time datetime="2021-08-03">2021.08.03</time>
-                    <h3 class="title">オフィス増設のお知らせ</h3>
-                    <span class="arrow basic"></span>
-                  </a>
-                </article>
-              </li>
-            </ul>
+            <ul id="news_list" class="postWrap list clearfix"></ul>
             <a class="cmnBtn" href="/news/">VIEW MORE<span class="arrow basic"></span></a>
           </div>
         </div>
       </section>
     </div>
 
-    <div id="loadLayer" class="loadComplete" style="display: none">
+    <div id="loadLayer">
       <div class="loadLayerInner">
         <div class="imgWrap">
-          <span
-            ><svg
-              id="レイヤー_1"
-              class="replace-svg replaced-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 92 105"
-              style="enable-background: new 0 0 92 105"
-              xml:space="preserve"
-            >
-              <style type="text/css">
-                .st0 {
-                  fill: #006277;
-                }
-
-              </style>
-              <g>
-                <path
-                  class="st0"
-                  d="M46,0.2c-25.3,0-46,20.6-46,46c0,17.2,9.5,32.2,23.4,40v-5.8C12.4,73.1,5,60.4,5,46.1c0-22.6,18.4-41,41-41   c22.6,0,41,18.4,41,41c0,14.3-7.4,26.9-18.5,34.2v5.8c14-7.9,23.4-22.9,23.4-40C92,20.8,71.3,0.2,46,0.2z"
-                ></path>
-                <polygon
-                  class="st0"
-                  points="60.9,92 31.1,92 31.1,99.4 42.3,99.4 42.3,104.8 49.7,104.8 49.7,99.4 60.9,99.4  "
-                ></polygon>
-                <path
-                  class="st0"
-                  d="M47.3,85c-1.7-0.6-4.6-2.2-5.1-3.2c-1.1-2.5-5.4-7.7-7.2-9.1c-1.9-1.5-2.7-2-5.8-1.2c-1.6,0.5-3.5,1-5.3,1.5   c2.4,2,5.1,3.7,8,5V85H47.3z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M46,11.4c-19.2,0-34.7,15.5-34.7,34.7c0,1.8,0.1,3.6,0.4,5.4c3.3-0.7,9.1-1.6,11.6-2.8c1.6-0.8,1-1.8,0.8-3.9   c-0.1-0.8,5.5,2.5,8.1,2.9c2.1,0.3,3.3-2.9,3.3-2.9s-7.7-0.9-11.8-5.8c-2-2.4-2.6-7.7-1.9-9.3c0.6-1.5,3.6-3.3,6.2-3.8   c2.5-0.5,5.2,1,5.2,1s1.2-0.8,3.6-1.7c2.3-0.9,4.5-1.2,6.7-0.5c3.5,1.1,8,2.4,10.2,3.1c2.2,0.7,5.2,1.8,5.9,2   c0.6,0.2,1,0.7,0.9,1.4c-0.1,0.6-0.7,0.7-0.6,1.2c0.1,0.5,0.4,1.1,0.3,1.8c-0.4,3.3-1.6,3.8-1.9,4.1c-0.3,0.3-0.7,0.5-1,0.8   c-0.4,0.3-0.6,0.5-0.7,0.8c0,0.4,0.1,1.2,0.7,0.7c0.5-0.4,1.1-1,1.2-1.1c0.5-0.2,0.3,4.2-0.4,4.6c-1.1,0.7-5.3,2.3-7.3,3.5   c-0.7,0.4-1.1,2.7-1.4,3.4c-0.7,2.2-4,8.1-4.6,10.6c-0.4,1.5-0.5,2.7-0.2,3.6c0.5,1.4,1,3.9,2.1,6.5c1.7,3.9,3,5.8,3.6,6.6   c0.9,1.2,2.3,1.4,5,1.4c1.3,0,2.4,3.9,2.2,5.1h4v-7.9c11.3-5.7,19-17.4,19-31C80.7,27,65.2,11.4,46,11.4z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M34.3,37.8c-0.2-1.2-0.7-4.3-1-5.8c-0.2-1.1-0.7-1.3-1.6-1.3c-1.8,0-3.5,1.4-3.8,2.7c-0.3,1.6,1.1,4.8,5.2,5.9   C34.4,39.7,34.5,39,34.3,37.8z"
-                ></path>
-              </g>
-            </svg>
+          <span>
+            <img src="../images/logomark.svg" />
           </span>
-          <span
-            ><svg
-              id="レイヤー_1"
-              class="replace-svg replaced-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 308 105"
-              style="enable-background: new 0 0 308 105"
-              xml:space="preserve"
-            >
-              <style type="text/css">
-                .st0 {
-                  fill: #006277;
-                }
-
-              </style>
-              <g>
-                <path class="st0" d="M50.5,76.4H25.7V36.2h8.7v33.7h16.1V76.4z"></path>
-                <path
-                  class="st0"
-                  d="M79.7,75.3c-2.7,1-6.5,1.7-10.6,1.7C59,77,53.2,71.3,53.2,62.3c0-8.4,5.4-15.6,15-15.6c7.9,0,13.1,5,13.1,14.5   c0,1.2-0.1,2.3-0.2,3.1H61.5c0.2,5,4.2,7,8.9,7c3.2,0,5.8-0.5,8-1.2L79.7,75.3z M73.3,58.8c0.1-3-1.3-6.8-5.6-6.8   c-4.2,0-5.9,3.9-6.2,6.8H73.3z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M115,61.6c0,11.1-8,15.4-15.3,15.4c-8.8,0-15.1-5.6-15.1-15c0-9.8,6.6-15.3,15.5-15.3   C109.2,46.6,115,52.8,115,61.6z M99.9,52.4c-4.8,0-6.5,5-6.5,9.5c0,5.2,2.2,9.5,6.5,9.5c4.1,0,6.3-4.3,6.3-9.5   C106.2,57.2,104.4,52.4,99.9,52.4z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M154.7,43.8c-1.6-0.7-4.3-1.7-8-1.7c-4.6,0-6.6,2.2-6.6,4.5c0,2.9,2.2,4.2,7.7,6.4c7.2,2.9,10.5,6.6,10.5,11.9   c0,7-5.9,12.2-16.4,12.2c-4.5,0-9-1.1-11.1-2.3l1.7-6.5c2.3,1.3,6.1,2.3,9.7,2.3c4.8,0,7.3-2,7.3-5c0-2.9-2.2-4.6-7.2-6.5   c-6.8-2.6-11-6.4-11-11.6c0-6.6,5.8-11.7,15.6-11.7c4.3,0,7.6,0.9,9.7,1.8L154.7,43.8z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M192,61.6c0,11.1-8,15.4-15.3,15.4c-8.8,0-15.1-5.6-15.1-15c0-9.8,6.6-15.3,15.5-15.3   C186.3,46.6,192,52.8,192,61.6z M176.9,52.4c-4.8,0-6.5,5-6.5,9.5c0,5.2,2.2,9.5,6.5,9.5c4.1,0,6.3-4.3,6.3-9.5   C183.2,57.2,181.4,52.4,176.9,52.4z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M205.3,51.3c2.1-3,5.5-4.6,9.7-4.6c7.2,0,12.4,6,12.4,14.9c0,10.7-6.8,15.5-13.4,15.5c-3.6,0-6.3-1.5-7.7-3.4   h-0.1v14.5h-8.7V56.8c0-3.8-0.1-6.9-0.2-9.5h7.6l0.4,4H205.3z M206.1,64.7c0,4.2,2.9,6.3,5.8,6.3c4.4,0,6.7-3.9,6.7-9.1   c0-5.2-2.2-9-6.5-9c-3.3,0-6,2.8-6,6.3V64.7z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M260.6,76.4h-8.7V59.6c0-3.7-1.3-6.6-5-6.6c-2.2,0-5.5,1.4-5.5,5.7v17.7h-8.7V34.3h8.7v16.4h0.1   c2.3-3,5.9-4.1,8.7-4.1c5.8,0,10.4,3.8,10.4,12.4V76.4z"
-                ></path>
-                <path class="st0" d="M276.2,76.4h-8.7V47.3h8.7V76.4z"></path>
-                <path
-                  class="st0"
-                  d="M307.5,69.5c0,2.6,0.1,5.1,0.5,6.9h-7.8l-0.5-3h-0.2c-1.9,2.3-5,3.6-8.7,3.6c-6,0-9.8-4-9.8-8.7   c0-7.5,7.5-11,17.8-11c0-2.9-1.1-5.1-5.9-5.1c-3,0-5.9,0.8-8,2l-1.6-5c2.2-1.2,6.2-2.5,11.3-2.5c10.2,0,12.9,5.8,12.9,12.2V69.5z    M299.1,62.3c-4.7,0-9.6,1-9.6,5.2c0,2.8,1.9,4,4.1,4c2.1,0,5.5-1.3,5.5-5V62.3z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M271.8,43.4c-2.8,0-4.6-2-4.6-4.6c0-2.7,1.9-4.6,4.6-4.6c2.8,0,4.7,1.9,4.7,4.6   C276.5,41.7,274.5,43.4,271.8,43.4z"
-                ></path>
-              </g>
-            </svg>
+          <span style="display: flex; align-items: center">
+            <p>Reliable</p>
+            <p>Person's</p>
+            <p>Company</p>
           </span>
         </div>
         <div class="elementWrap">
@@ -650,8 +403,8 @@
       </div>
     </div>
 
-    <div class="pointer stalker" style="transform: matrix(1, 0, 0, 1, 218, 437)"><span></span></div>
-    <div class="pointer cursor" style="transform: matrix(1, 0, 0, 1, 218, 437)"><span></span></div>
+    <div class="pointer stalker" style="transform: matrix(1, 0, 0, 1, 5, 246)"><span></span></div>
+    <div class="pointer cursor" style="transform: matrix(1, 0, 0, 1, 5, 246)"><span></span></div>
 
     <footer class="clearfix" style="opacity: 1">
       <div id="pageTop" class="scroll">
@@ -839,7 +592,7 @@
     <script
       id="jquery-js"
       type="text/javascript"
-      src="https://leosophia.co.jp/wp-content/themes/LeoSophia/js/library/jquery-1.11.3.min.js?ver=5.5.10"
+      src="../js/library/jquery-1.11.3.min.js?ver=5.5.10"
       defer
       charset="UTF-8"
     ></script>
@@ -851,14 +604,14 @@
     <script
       id="jquery-lazyloadxt-js"
       type="text/javascript"
-      src="//leosophia.co.jp/wp-content/plugins/a3-lazy-load/assets/js/jquery.lazyloadxt.extra.min.js?ver=2.4.1"
+      src="../js/assets/jquery.lazyloadxt.extra.min.js?ver=2.4.1"
       defer
       charset="UTF-8"
     ></script>
     <script
       id="jquery-lazyloadxt-srcset-js"
       type="text/javascript"
-      src="//leosophia.co.jp/wp-content/plugins/a3-lazy-load/assets/js/jquery.lazyloadxt.srcset.min.js?ver=2.4.1"
+      src="../js/assets/jquery.lazyloadxt.srcset.min.js?ver=2.4.1"
       defer
       charset="UTF-8"
     ></script>
@@ -870,44 +623,39 @@
     <script
       id="jquery-lazyloadxt-extend-js"
       type="text/javascript"
-      src="//leosophia.co.jp/wp-content/plugins/a3-lazy-load/assets/js/jquery.lazyloadxt.extend.js?ver=2.4.1"
+      src="../js/assets/jquery.lazyloadxt.extend.js?ver=2.4.1"
       defer
       charset="UTF-8"
     ></script>
     <script
       id="desvg-js"
       type="text/javascript"
-      src="https://leosophia.co.jp/wp-content/themes/LeoSophia/js/library/desvg.min.js?ver=5.5.10"
+      src="../js/library/desvg.min.js?ver=5.5.10"
       defer
       charset="UTF-8"
     ></script>
     <script
       id="TweenMax-js"
       type="text/javascript"
-      src="https://leosophia.co.jp/wp-content/themes/LeoSophia/js/library/TweenMax.min.js?ver=5.5.10"
+      src="../js/library/TweenMax.min.js?ver=5.5.10"
       defer
       charset="UTF-8"
     ></script>
     <script
       id="iziModal-js"
       type="text/javascript"
-      src="https://leosophia.co.jp/wp-content/themes/LeoSophia/js/library/iziModal.min.js?ver=5.5.10"
+      src="../js/library/iziModal.min.js?ver=5.5.10"
       defer
       charset="UTF-8"
     ></script>
     <script
       id="slick-js"
       type="text/javascript"
-      src="https://leosophia.co.jp/wp-content/themes/LeoSophia/js/library/slick.min.js?ver=201022-2"
+      src="../js/library/slick.min.js?ver=201022-2"
       defer
       charset="UTF-8"
     ></script>
-    <script
-      id="base-js"
-      type="text/javascript"
-      src="https://leosophia.co.jp/wp-content/themes/LeoSophia/js/base.js?ver=220411"
-      defer
-      charset="UTF-8"
-    ></script>
+    <script id="base-js" type="text/javascript" src="../js/base.js?ver=220411" defer charset="UTF-8"></script>
+    <script id="index-js" type="text/javascript" src="../js/index.js?ver=220411" defer charset="UTF-8"></script>
   </body>
 </html>

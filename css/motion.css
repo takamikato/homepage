@@ -1,0 +1,729 @@
+.trigInner,
+.cmnBtnLDeco .layerWrap>div {
+    -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -o-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+.trigInner>.imgWrap{
+    -webkit-transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -moz-transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+.trigInner>.layerWrap,
+.trigBase .titleWrap,
+.mapWrap.active .info,
+.triggerBasic.active,
+.sec>.innerBasic.trigger1.active>.bodyWrap>:first-child {
+    -webkit-transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1),opacity 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -moz-transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1),opacity 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1),opacity 0.5s cubic-bezier(0.5, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1),opacity 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.trigBase2,
+.trigInner2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+    -o-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+.trigInner2{
+    transform: translateX(-101%);
+}
+.trigger2 .trigBase2 .trigInner2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100%;
+    transform: translateX(0%);
+    z-index: 1;
+}
+.trigger2.active .trigBase2 .trigInner2:before {
+    -webkit-animation: trigInner2Anime .5s cubic-bezier(0.5, 0, 0, 1);
+    animation: trigInner2Anime .5s cubic-bezier(0.5, 0, 0, 1);
+}
+@-webkit-keyframes trigInner2Anime {
+0% {background-color: rgba(0,145,179,1);}
+100% {background-color: rgba(0, 0, 0, 1);}
+}
+@keyframes trigInner2Anime { 
+0% {background-color: rgba(0,145,179,1);}
+100% {background-color: rgba(0, 0, 0, 1);}
+}
+
+#recruitSite .trigger2 .trigBase2 .trigInner2:before{
+    /*background-color: rgba(0, 175, 70, 1);*/
+    background-color: rgba(0, 200, 80, 1);
+}
+#recruitSite .trigger2.active .trigBase2 .trigInner2:before {
+    -webkit-animation: trigInner2RecruitAnime .5s cubic-bezier(0.5, 0, 0, 1);
+    animation: trigInner2RecruitAnime .5s cubic-bezier(0.5, 0, 0, 1);
+}
+@-webkit-keyframes trigInner2RecruitAnime {
+0% {background-color: rgba(255,255,0,1);}
+100% {background-color: rgba(0, 200, 80, 1);}
+}
+@keyframes trigInner2RecruitAnime { 
+0% {background-color: rgba(255,255,0,1);}
+100% {background-color: rgba(0, 200, 80, 1);}
+}
+
+.trigger2.active .trigBase2 .trigInner2{
+    transform: translateX(0);
+}
+.trigger2.active .trigBase2 .trigInner2:before {
+    transform: translateX(101%);
+    transition-delay: 0.5s;
+}
+.delayWrap .delay:nth-child(1) .trigInner2{transition-delay: 0;}
+.delayWrap .delay:nth-child(2) .trigInner2,
+.postWrap.thumbnail.col3>li:nth-child(3n-1) .trigInner2,
+.postWrap.thumbnail.col2>li:nth-child(even) .trigInner2{transition-delay: .1s !important;}
+.delayWrap .delay:nth-child(3) .trigInner2,
+.postWrap.thumbnail.col3>li:nth-child(3n) .trigInner2{transition-delay: .2s;}
+.delayWrap .delay:nth-child(4) .trigInner2{transition-delay: .3s;}
+.delayWrap .delay:nth-child(5) .trigInner2{transition-delay: .4s;}
+.delayWrap .delay:nth-child(6) .trigInner2,
+.postWrap.thumbnail.col3>li.active:nth-child(3n-2)>article>a>.titleWrap,
+.postWrap.thumbnail.col2>li.active:nth-child(odd)>article>a>.titleWrap{transition-delay: .5s !important;}
+.delayWrap .delay:nth-child(7) .trigInner2,
+.postWrap.thumbnail.col3>li.active:nth-child(3n-1)>article>a>.titleWrap,
+.postWrap.thumbnail.col2>li.active:nth-child(even)>article>a>.titleWrap{transition-delay: .6s !important;}
+.delayWrap .delay:nth-child(8) .trigInner2,
+.postWrap.thumbnail.col3>li.active:nth-child(3n)>article>a>.titleWrap{transition-delay: .7s;}
+.delayWrap .delay:nth-child(9) .trigInner2{transition-delay: .8s;}
+.delayWrap .delay:nth-child(1) .trigInner2:before {transition-delay: .5s;animation-delay: 0;}
+.delayWrap .delay:nth-child(2) .trigInner2:before,
+.postWrap.thumbnail.col3>li:nth-child(3n-1) .trigInner2:before,
+.postWrap.thumbnail.col2>li:nth-child(even) .trigInner2:before {transition-delay: .6s;animation-delay: .1s !important;}
+.delayWrap .delay:nth-child(3) .trigInner2:before,
+.postWrap.thumbnail.col3>li:nth-child(3n) .trigInner2:before {transition-delay: .7s;animation-delay: .2s;}
+.delayWrap .delay:nth-child(4) .trigInner2:before {transition-delay: .8s;animation-delay: .3s;}
+.delayWrap .delay:nth-child(5) .trigInner2:before {transition-delay: .9s;animation-delay: .4s;}
+.delayWrap .delay:nth-child(6) .trigInner2:before {transition-delay: 1s;animation-delay: .5s;}
+.delayWrap .delay:nth-child(7) .trigInner2:before {transition-delay: 1.1s;animation-delay: .6s;}
+.delayWrap .delay:nth-child(8) .trigInner2:before {transition-delay: 1.2s;animation-delay: .7s;}
+.delayWrap .delay:nth-child(9) .trigInner2:before {transition-delay: 1.3s;animation-delay: .8s;}
+
+/*
+.trigger1{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+*/
+.trigger1>.trigBase {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.trigger1>.trigBase .imgWrap{
+    width: 100%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+}
+.trigger1>.trigBase .titleWrap{
+    margin-top: 30px;
+    position: relative;
+    letter-spacing: 0.15em;
+    opacity: 0;
+    padding-right: 40px;
+    transform: translateY(-10px);
+}
+.trigger1.active>.trigBase .titleWrap{
+    opacity: 1;
+    font-size: 14px;
+    transform: translateY(0);
+}
+.trigger1>.trigBase .titleWrap>.title {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-weight: 900;
+}
+.trigger1>.trigBase .titleWrap>.sub{
+    font-size: 14px;
+    line-height: 2em;
+}
+.trigger1>.trigBase .trigInner>.imgWrap{
+    transform: translateX(-101%);
+}
+.trigger1>.trigBase .trigInner>.layerWrap{
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.trigger1>.trigBase .imgWrap:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100%;
+    transform: translateX(0%);
+    z-index: 1;
+}
+.trigger1.active>.trigBase .imgWrap:before {
+    -webkit-animation: trigger1Anime .5s cubic-bezier(0.5, 0, 0, 1);
+    animation: trigger1Anime .5s cubic-bezier(0.5, 0, 0, 1);
+}
+@-webkit-keyframes trigger1Anime {
+0% {background-color: rgba(0,145,179,1);}
+100% {background-color: rgba(0, 0, 0, 1);}
+}
+@keyframes trigger1Anime { 
+0% {background-color: rgba(0,145,179,1);}
+100% {background-color: rgba(0, 0, 0, 1);}
+}
+
+
+#recruitSite .trigger1>.trigBase .imgWrap:before{
+    background-color: rgba(0, 200, 80, 1);
+}
+#recruitSite .trigger1.active>.trigBase .imgWrap:before {
+    -webkit-animation: trigger1RecruitAnime .5s cubic-bezier(0.5, 0, 0, 1);
+    animation: trigger1RecruitAnime .5s cubic-bezier(0.5, 0, 0, 1);
+}
+@-webkit-keyframes trigger1RecruitAnime {
+0% {background-color: rgba(255,255,0,1);}
+100% {background-color: rgba(0, 200, 80, 1);}
+}
+@keyframes trigger1RecruitAnime { 
+0% {background-color: rgba(255,255,0,1);}
+100% {background-color: rgba(0, 200, 80, 1);}
+}
+
+.trigger1.active>.trigBase .trigInner>.imgWrap{
+    transform: translateX(0) !important;
+}
+.trigger1.active>.trigBase .trigInner>.layerWrap{
+    transition-delay: .75s;
+    opacity: 1;
+    transform: scale(1);
+}
+.trigger1.active>.trigBase .imgWrap:before {
+    transform: translateX(101%);
+}
+.trigger1.active>.trigBase:nth-child(1) .imgWrap:before,
+.trigger1.active>.trigBase:nth-child(1) .titleWrap {transition-delay: 0.5s;}
+.trigger1.active>.trigBase:nth-child(2) .imgWrap:before,
+.trigger1.active>.trigBase:nth-child(2) .titleWrap {transition-delay: 0.6s;}
+.trigger1.active>.trigBase:nth-child(3) .imgWrap:before,
+.trigger1.active>.trigBase:nth-child(3) .titleWrap {transition-delay: 0.7s;}
+.trigger1.active>.trigBase:nth-child(1) .trigInner>.imgWrap{}
+.trigger1.active>.trigBase:nth-child(2) .trigInner>.imgWrap{transition-delay: 0.1s;}
+.trigger1.active>.trigBase:nth-child(3) .trigInner>.imgWrap{transition-delay: 0.2s;}
+.trigger1.active>.trigBase:nth-child(1) .imgWrap:before{}
+.trigger1.active>.trigBase:nth-child(2) .imgWrap:before{animation-delay: 0.1s !important;}
+.trigger1.active>.trigBase:nth-child(3) .imgWrap:before{animation-delay: 0.2s !important;}
+.trigger1>.trigBase>a{display: block;pointer-events: none;}
+.trigger1.active>.trigBase>a{pointer-events: visible;}
+.trigger1.horizontal{}
+.trigger1.horizontal>.trigBase {
+    display: block;
+    float: left;
+}
+.trigger1.horizontal.rows2{
+    max-width: 67%;
+    margin: auto;
+}
+.trigger1.horizontal.rows2>.trigBase{
+    width: 46.25%;
+    margin-left: 7.5%;
+}
+.trigger1.horizontal.rows3>.trigBase {
+    width: 30%;
+    margin-left: 5%;
+}
+.trigger1.horizontal>.trigBase:first-child {
+    margin-left: 0;
+}
+.trigger1.horizontal>.trigBase .imgWrap{
+    height: 17vw;
+    min-height: 180px;
+}
+.cmnBtnLDeco {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.cmnBtnLDeco .imgWrap{
+    width: 100% !important;
+    height: 35vw !important;
+    min-height: 400px;
+    max-height: 600px;
+}
+.cmnBtnLDeco .layerWrap{
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.cmnBtnLDeco .layerWrap>div{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6.5%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cmnBtnLDeco .layerWrap>div>.titleWrap{
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 0;
+    transform: translateY(0px);
+    opacity: 1;
+}
+.cmnBtnLDeco .layerWrap>div>.titleWrap:before,
+.cmnBtnLDeco .layerWrap>div>.titleWrap:after{
+    display: none;
+}
+.cmnBtnLDeco .layerWrap>div>.titleWrap>.title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+}
+.cmnBtnLDeco .layerWrap>div>.titleWrap>.sub {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.cmnBtnLDeco .more {
+    font-weight: 900;
+    position: absolute;
+    bottom: 16%;
+    right: 0;
+    padding-right: 100px;
+    letter-spacing: 0.1em;
+}
+.cmnBtnLDeco .arrow,
+.arrow.basic{
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    pointer-events: none;
+}
+.arrow.basic{
+    top: 0;
+    bottom: 0;
+}
+.cmnBtnLDeco .arrow{
+    width: 100px;
+    bottom: 16%;
+    right: -50px;
+}
+.cmnBtnLDeco .arrow:before,
+.cmnBtnLDeco .arrow:after,
+.arrow.basic:before,
+.arrow.basic:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #000;
+    transform: translateX(0);
+}
+.btn>button:before,
+.btn>button:after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #FFF;
+    transform: translateX(0);
+}
+.btn>button:before {right: 0;}
+.btn>button:after {
+    left: calc(100% - 40px);
+}
+.cmnBtnLDeco .arrow:after,
+.arrow.basic:after,
+.btn>button:after{
+    width: 0;
+}
+
+.cmnBtnLDeco.recruit{}
+.cmnBtnLDeco.recruit * {
+    color: #FFF;
+}
+.cmnBtnLDeco.recruit .trigInner>.imgWrap{
+    height: 50vw !important;
+    min-height: 600px;
+    max-height: 700px;
+}
+.cmnBtnLDeco.recruit .layerWrap:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .25;
+}
+
+.cmnBtnLDeco.recruit .layerWrap>.bgWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.cmnBtnLDeco.recruit .layerWrap>.bgWrap>span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.cmnBtnLDeco.recruit .layerWrap>.bgWrap>span>.bg{transform: scale(1.1);}
+.cmnBtnLDeco.recruit .layerWrap>div{
+    background-color: transparent !important;
+}
+.cmnBtnLDeco.recruit .layerWrap>div:before,
+.cmnBtnLDeco.recruit .layerWrap>div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-image: -webkit-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 100%);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 100%);
+}
+.cmnBtnLDeco.recruit .layerWrap>div:before{
+    top: 0;
+    height: 50%;
+}
+.cmnBtnLDeco.recruit .layerWrap>div:after {
+    bottom: 0;
+    height: 50%;
+    transform: rotate(180deg);
+}
+.cmnBtnLDeco.recruit .layerWrap>div * {
+    z-index: 1;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>.titleWrap,
+.cmnBtnLDeco.recruit .layerWrap>div>p,
+.cmnBtnLDeco.recruit .more{
+    text-shadow: 0 0 20px rgba(0,0,0,1);
+}
+.cmnBtnLDeco.recruit .layerWrap>div>.titleWrap,
+.cmnBtnLDeco.recruit .layerWrap>div>p{
+    text-align: center;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>p {
+    font-size: 30px;
+    line-height: 1.75em;
+    font-weight: 900;
+    letter-spacing: .25em;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    right: 0;
+    width: 55%;
+    min-width: 550px;
+    max-width: 750px;
+    margin: auto;
+    padding: 1.5%;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>p:before,
+.cmnBtnLDeco.recruit .layerWrap>div>p:after {
+    content: "";
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: absolute;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>p:before{
+    border-left: 4px solid;
+    border-top: 4px solid;
+    top: 0;
+    left: 0;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>p:after {
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+    bottom: 0;
+    right: 0;
+}
+.cmnBtnLDeco.recruit .more {
+    padding: 0;
+    text-align: center;
+    left: 0;
+    bottom: 60px;
+}
+.cmnBtnLDeco.recruit .arrow {
+    transform: rotate(90deg);
+    bottom: -15px;
+    right: 0;
+    left: 0;
+}
+.cmnBtnLDeco.recruit .arrow:before,
+.cmnBtnLDeco.recruit .arrow:after{
+    background-color: #FFF;
+}
+
+
+
+/* media query 641px以上 */
+@media only screen and (min-width: 641px){
+.trigger1>.trigBase>a:hover{opacity: 1;}
+.trigger1>.trigBase>a:hover .titleWrap:after{transition-delay: 0.5s;width: 40px;right: 0;}
+.trigger1>.trigBase>a:hover .imgWrap>.bg{transform: scale(1.1);}
+.cmnBtnLDeco.recruit:hover .layerWrap>.bgWrap>span>.bg{transform: scale(1);}
+.cmnBtnLDeco:hover .layerWrap>div {background-color: rgba(255, 255, 255, 1);}
+.modalBtn:hover .arrow:before,
+.cmnBtnLDeco:hover .arrow:before,
+a:hover .arrow.basic:before,
+.btn>button:hover:before{transform: translateX(100%);}
+.modalBtn:hover .arrow:after,
+.cmnBtnLDeco:hover .arrow:after,
+a:hover .arrow.basic:after{transition-delay: 0.5s;width: 100%;}
+.btn>button:hover:after{transition-delay: 0.5s;width: 40px;}
+}
+
+
+@media only screen and (max-width: 640px){
+.trigger1.horizontal{
+    max-width: 100% !important;
+}
+.trigger1>.trigBase {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+}
+.trigger1.horizontal>.trigBase{
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 8%;
+    margin-left: 0 !important;
+}
+.trigger1.horizontal>.trigBase:last-child {
+    margin-bottom: 0;
+}
+.trigger1>.trigBase .trigInner{
+    display: table;
+    width: 100%;
+}
+.trigger1>.trigBase .imgWrap,
+.trigger1>.trigBase .titleWrap{
+    display: table-cell;
+    vertical-align: middle;
+}
+.trigger1>.trigBase .imgWrap {
+    width: 50%;
+    height: 30vw;
+    margin-bottom: 0;
+}
+.trigger1>.trigBase .imgWrap,
+.trigger1.horizontal>.trigBase .imgWrap{
+    height: 30vw;
+}
+.trigger1>.trigBase .titleWrap {
+    width: 50%;
+    padding-left: 20px;
+    letter-spacing: 0;
+}
+.trigger1.horizontal>.trigBase .titleWrap{
+    padding-right: 20px;
+}
+.trigger1>.trigBase .titleWrap>.title {
+    font-size: 4.5vw;
+}
+.trigger1>.trigBase .titleWrap>.sub {
+    font-size: 2.5vw;
+}
+.cmnBtnLDeco {}
+.cmnBtnLDeco .imgWrap{
+    height: 50vw !important;
+}
+.cmnBtnLDeco .layerWrap{
+    padding: 20px;
+}
+.cmnBtnLDeco .layerWrap>div {}
+.cmnBtnLDeco .layerWrap>div>.titleWrap {
+    letter-spacing: 0.1em;
+}
+.cmnBtnLDeco .layerWrap>div>.titleWrap>.title {
+    font-size: 6vw;
+    margin-bottom: 5px;
+}
+.cmnBtnLDeco .layerWrap>div>.titleWrap>.sub {
+    font-size: 3vw;
+}
+.cmnBtnLDeco .more {
+    padding-right: 30px;
+    font-size: 12px;
+    letter-spacing: .05em;
+}
+.cmnBtnLDeco .arrow{
+    width: 30px;
+    right: -20px;
+}
+.arrow.basic{width: 20px;}
+
+.cmnBtnLDeco.recruit .layerWrap>div>.titleWrap,
+.cmnBtnLDeco.recruit .layerWrap>div>p,
+.cmnBtnLDeco.recruit .more{
+    text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.cmnBtnLDeco.recruit .trigInner>.imgWrap{
+    height: 80vw !important
+}
+.cmnBtnLDeco.recruit .layerWrap>.bgWrap{
+    padding: 20px;
+}
+.cmnBtnLDeco.recruit .layerWrap>div{
+    padding-top: 10%;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>.titleWrap{
+    display: block;
+    width: 100%;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>p {
+    font-size: 4vw;
+    line-height: 2em;
+    min-width: 210px;
+    width: 85%;
+    letter-spacing: 0.1em;
+    bottom: 50px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.cmnBtnLDeco.recruit .layerWrap>div>p:before,
+.cmnBtnLDeco.recruit .layerWrap>div>p:after {
+    border-width: 2px;
+    width: 50px;
+    height: 25px;
+}
+.cmnBtnLDeco.recruit .arrow{
+    bottom: -20px;
+}
+.cmnBtnLDeco.recruit .more{
+    bottom: 20px;
+}
+.btn>button:before {
+    width: 20px;
+}
+.btn>button:after {
+    display: none;
+}
+}
+
+
+
+.triggerTB .trigBaseTB>.titleWrap *{
+    display: block;
+}
+.sec>.innerBasic>.bodyWrap,
+.sec>.innerBasic>.titleWrap *,
+.triggerTB .trigBaseTB>.bodyWrap,
+.triggerTB .trigBaseTB>.titleWrap *{
+    -webkit-transition: transform 0.8s cubic-bezier(0.5, 0, 0, 1),opacity 0.8s cubic-bezier(0.5, 0, 0, 1);
+    -moz-transition: transform 0.8s cubic-bezier(0.5, 0, 0, 1),opacity 0.8s cubic-bezier(0.5, 0, 0, 1);
+    -o-transition: transform 0.8s cubic-bezier(0.5, 0, 0, 1),opacity 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transition: transform 0.8s cubic-bezier(0.5, 0, 0, 1),opacity 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.sec>.innerBasic>.titleWrap>span,
+.triggerTB .trigBaseTB>.titleWrap>span{
+    display: flex;
+    overflow: hidden;
+}
+.sec>.innerBasic>.titleWrap>span{
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.sec>.innerBasic>.titleWrap>span>span,
+.triggerTB .trigBaseTB>.titleWrap>span>span{
+    overflow: hidden;
+}
+.sec>.innerBasic>.titleWrap>span>span>span,
+.triggerTB .trigBaseTB>.titleWrap>span>span>span{
+    transform: translate3d(-101%, 0, 0);
+    overflow: hidden;
+}
+.sec>.innerBasic>.titleWrap>span>span>span>span,
+.triggerTB .trigBaseTB>.titleWrap>span>span>span>span{
+    transform: translate3d(101%, 0, 0);
+}
+
+.sec>.innerBasic.active>.titleWrap>span>span>span,
+.sec>.innerBasic.active>.titleWrap>span>span>span>span,
+.triggerTB.active .trigBaseTB>.titleWrap>span>span>span,
+.triggerTB.active .trigBaseTB>.titleWrap>span>span>span>span{transform: translate3d(0,0,0);}
+
+.sec>.innerBasic.active>.titleWrap>span:nth-child(2)>span>span,
+.sec>.innerBasic.active>.titleWrap>span:nth-child(2)>span>span>span,
+.triggerTB.active .trigBaseTB>.titleWrap>span:nth-child(2)>span>span,
+.triggerTB.active .trigBaseTB>.titleWrap>span:nth-child(2)>span>span>span{transition-delay: .2s;}
+
+.triggerBasic,
+.sec>.innerBasic.trigger1:first-child>.bodyWrap,
+.triggerTB .trigBaseTB>.bodyWrap,
+.mapWrap .info{
+    opacity: 0;
+    transform: translateY(-5px);
+    pointer-events: none;
+}
+
+.triggerBasic.active,
+.sec>.innerBasic.trigger1.active:first-child>.bodyWrap,
+.triggerTB.active .trigBaseTB>.bodyWrap,
+.mapWrap.active .info{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: visible;
+}
+
+.sec>.innerBasic.trigger1.active:first-child>.bodyWrap,
+.triggerTB.active .trigBaseTB>.bodyWrap,
+.mapWrap.active .info{
+    transition-delay: .6s;
+}
+.imgLVList>li>.bodyWrap>.rightWrap>.bodyWrap{
+    transition-delay: .8s;
+}
+.bodyWrap.trigReset{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition-delay: 0 !important;
+}
+
+/* reset */
+p{
+    transition-property: letter-spacing;
+    transition-duration: unset !important;
+}
+/* reset end */

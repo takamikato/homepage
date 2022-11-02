@@ -3,8 +3,6 @@
   "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
   "rules": {
     "color-hex-length": "long",
-    "declaration-colon-newline-after": "always-multi-line",
-    "string-quotes": "single",
-    "rule-nested-empty-line-before": "never"
+    "string-quotes": "single"
   }
 }
